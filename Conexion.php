@@ -1,40 +1,6 @@
 
 <?php
 
-//Primera Forma de conexion con la Extension PDO
-/*
-
-$servidor = "localhost";
-$usuario = "root";
-$password = "";
-
-try{
-    $conexion = new PDO("mysql:host=$servidor;dbname=prueba_conexion",$usuario,$password);
-    $conexion->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    echo "Conexión realizada con exito";
-}
-catch(PDOException $e){
-    echo"La Conexión ha fallado: ". $e->getMessage();
-}
-$conexion = null;
-
-
-
-$servidor = "mysql:dbname=prueba_conexion; host=localhost";
-$usuario = "root";
-$password = "";
-
-$con = new PDO($servidor,$usuario,$password);
-
-    if($con){
-        echo"Conexión Exitosa hacia la Base de datos";
-    }
-    else
-    {
-        echo"La Conexión hacia la base de datos ha fallado";
-    }
-        */
-
 
         $servidor = "mysql:dbname=prueba_conexion;host=localhost";
         $usuario = "root";
