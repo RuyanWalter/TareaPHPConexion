@@ -20,6 +20,8 @@ if($inc){
                     <b>ID:</b> <?php echo $id; ?> <br>
                     <b>Email:</b> <?php echo $email; ?> <br>
                     <b>Fecha Registro:</b> <?php echo $fecha_reg; ?> <br>
+                    <a href="modificar.php?id=<?php echo $id; ?>">Modificar</a> |
+                    <a href="eliminar.php?id=<?php echo $id; ?>" onclick="return confirm('¿Estás seguro de que deseas eliminar este registro?');">Eliminar</a>
                 </p>
 
             <?php
